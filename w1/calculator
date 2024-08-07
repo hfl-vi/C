@@ -4,7 +4,7 @@ int main() {
     char op;
     double num1, num2, result;
     
-    printf("Enter an expression (e.g., 5 + 3): ");
+    printf("Enter a "Full expression use the proper operators! +, -, /, *");
     
     if (scanf("%lf", &num1) != 1) {
         printf("Error reading the first number.\n");
@@ -12,7 +12,7 @@ int main() {
     }
 
     if (scanf(" %c", &op) != 1) {
-        printf("Error reading the operator.\n");
+        printf("Incorrect operator.\n");
         return 1;
     }
 
@@ -39,11 +39,11 @@ int main() {
                 result = num1 / num2;
                 printf("Result: %lf\n", result);
             } else {
-                printf("Error: Division by zero.\n");
+                printf("Cannot divide by zero!.\n");
             }
             break;
         default:
-            printf("Error: Invalid operator.\n");
+            printf("incorrect operator.\n");
             break;
     }
 
